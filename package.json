@@ -1,0 +1,20 @@
+{
+  "name": "reliable-webhook-delivery-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Synchronous webhook delivery API with MySQL persistence and bounded retries",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "demo:receiver": "node src/demo-receiver.js",
+    "test": "node --test"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  },
+  "devDependencies": { "supertest": "^7.0.0" }
+}
